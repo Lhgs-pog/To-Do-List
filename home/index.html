@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--BARRA DE NAVEGAÇÃO-->
+    <nav>
+        <!--Titulo-->
+        <div id="nav-titulo">
+            <h1>To-Do-List</h1>
+        </div>
+        <!--Botoes da nav-->
+        <div id="nav-btn">
+            <div id="pesquisa">
+                <input type="text" placeholder="Pesquisar Tarefa">
+                <button type="button" onclick="pesquisar()">Pesquisar</button>
+            </div>
+            <button type="button" onclick="adicionarTarefa()">
+                Adicionar Tarefa
+            </button>
+            <button type="button" onclick="visualizarTarefa()">
+                Visualizar Tarefas
+            </button>
+        </div>
+    </nav>
+
+    <!--AREA ONDE IRÁ MOSTRAR AS TAREFAS-->
+    <div id="area-tarefa" class="active">
+        <!--Area dos cards-->
+        <div class="cards">
+
+            <!--Conteudo do card-->
+            <div id="conteudo">
+                <h2><b>Titulo</b></h2>
+                <span id="descricao">Descrição</span>
+
+                <span id="inicio" class="datas">Início: 12/34/5678</span>
+                <span id="Termino" class="datas">Termino: 87/65/4321</span>
+            </div>
+            <!--Botões do card-->
+            <div class="cards-botoes">
+                <button type="button" id="btn-concluir" onclick="concluirTarefa()">
+                    Concluir
+                </button>
+                <button type="button" id="btn-atualizar" onclick="atualizarTarefa()">
+                    Atualizar
+                </button>
+                <button type="button" id="btn-excluir" onclick="excluirTarefa()">
+                    Excluir
+                </button>
+            </div>
+            
+        </div>
+    </div>
+
+    <!--AREA CADASTRAR TAREFA-->
+    <div id="area-cadastro" class="">
+        <form id="formulario" action="">
+            <h2>Adicionar nova tarefa</h2>
+
+            <label class="form-item" for="form-titulo">Título</label>
+            <input class="form-item" id="form-titulo" type="text" placeholder="Titulo da tarefa">
+
+            <label class="form-item" for="form-descricao">Descrição</label>
+            <input class="form-item" id="form-descricao" type="text" placeholder="Descrição da tarefa">
+
+            <label class="form-item" for="data-inicio">Data inicio:</label>
+            <input class="form-item" id="data-inicio" type="date">
+
+            <label class="form-item" for="data-termino">Data termino:</label>
+            <input class="form-item" id="data-termino" type="date">
+
+            <button id="form-btn" type="button" onclick="cadastrarTarefa()">Enviar</button>
+        </form>
+    </div>
+
+    <!--RODAPE-->
+    <footer>
+
+    </footer>
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
