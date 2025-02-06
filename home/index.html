@@ -16,13 +16,13 @@
         <!--Botoes da nav-->
         <div id="nav-btn">
             <div id="pesquisa">
-                <input type="text" placeholder="Pesquisar Tarefa">
-                <button type="button" onclick="pesquisar()">Pesquisar</button>
+                <input id="pesquisa" type="text" placeholder="Pesquisar Tarefa">
+                <button type="button" id="btn-pesquisar">Pesquisar</button>
             </div>
-            <button type="button" onclick="adicionarTarefa()">
+            <button type="button" id="add-btn">
                 Adicionar Tarefa
             </button>
-            <button type="button" onclick="visualizarTarefa()">
+            <button type="button" id="show-btn">
                 Visualizar Tarefas
             </button>
         </div>
@@ -32,7 +32,6 @@
     <div id="area-tarefa" class="active">
         <!--Area dos cards-->
         <div class="cards">
-
             <!--Conteudo do card-->
             <div id="conteudo">
                 <h2><b>Titulo</b></h2>
@@ -43,17 +42,16 @@
             </div>
             <!--Botões do card-->
             <div class="cards-botoes">
-                <button type="button" id="btn-concluir" onclick="concluirTarefa()">
+                <button type="button" id="btn-concluir">
                     Concluir
                 </button>
-                <button type="button" id="btn-atualizar" onclick="atualizarTarefa()">
+                <button type="button" id="btn-atualizar">
                     Atualizar
                 </button>
-                <button type="button" id="btn-excluir" onclick="excluirTarefa()">
+                <button type="button" id="btn-excluir">
                     Excluir
                 </button>
             </div>
-            
         </div>
     </div>
 
@@ -63,18 +61,18 @@
             <h2>Adicionar nova tarefa</h2>
 
             <label class="form-item" for="form-titulo">Título</label>
-            <input class="form-item" id="form-titulo" type="text" placeholder="Titulo da tarefa">
+            <input class="form-item" id="form-titulo" type="text" placeholder="Titulo da tarefa" required>
 
             <label class="form-item" for="form-descricao">Descrição</label>
-            <input class="form-item" id="form-descricao" type="text" placeholder="Descrição da tarefa">
+            <input class="form-item" id="form-descricao" type="text" placeholder="Descrição da tarefa" required>
 
             <label class="form-item" for="data-inicio">Data inicio:</label>
-            <input class="form-item" id="data-inicio" type="date">
+            <input class="form-item" id="data-inicio" type="date" required>
 
             <label class="form-item" for="data-termino">Data termino:</label>
-            <input class="form-item" id="data-termino" type="date">
+            <input class="form-item" id="data-termino" type="date" required>
 
-            <button id="form-btn" type="button" onclick="cadastrarTarefa()">Enviar</button>
+            <button id="form-btn" type="button">Enviar</button>
         </form>
     </div>
 
@@ -84,6 +82,6 @@
     </footer>
 
 
-    <script src="script.js" defer></script>
+    <script defer src="script.js"></script>
 </body>
 </html>
