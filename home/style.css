@@ -97,11 +97,11 @@
             padding: 5px 0px;
         }
 
-        #conteudo h2{
+        .conteudo h2{
             text-decoration: underline;
         }
         
-        #descricao{
+        .descricao{
             border-bottom: #000 1px solid;
             margin: 10px 0px;
         }
