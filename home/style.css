@@ -89,6 +89,7 @@
             display: inline-block;
             border: #000 2px solid;
             border-radius: 10px;
+            margin: 30px;
         }
 
         .cards span{
@@ -124,17 +125,17 @@
                 border: #000 2px solid;
             }
 
-            #btn-concluir{
+            .btn-concluir{
                 background-color: rgb(0, 204, 0);
                 color: #000;
             }
 
-            #btn-atualizar{
+            .btn-atualizar{
                 background-color: rgb(255, 243, 79);
                 color: #000;
             }
 
-            #btn-excluir{
+            .btn-excluir{
                 background-color: rgb(255, 0, 0);
                 color: #000;
             }
